@@ -1,6 +1,6 @@
 body {
     max-width: 100%;
-    min-width: 40%;
+    min-width: 60%;
     background-color: gray;
     display: block;
     font-family: arial;
@@ -40,7 +40,7 @@ body {
     justify-content: center;
 }
 
-.main-container {
+#form {
     display: inline-block;
     display: flex;
     flex-wrap: wrap;
@@ -50,14 +50,25 @@ body {
 }
 
 .form-container {
+    max-width: 100%;
     display: inline-block;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-left: 5px;
     margin-right: 10px;
-    margin-top: 5px;
+    margin-top: 25px;
     color: black;
+}
+
+#form-label1 {
+    display: block;
+    align-items: end;
+    text-align: right;
+    margin-right: 500px;
+    margin-bottom: -25px;
+    max-width: 80%;
+    margin-top: 20px;
 }
 
 .form-label {
@@ -66,36 +77,37 @@ body {
     text-align: right;
     margin-right: 500px;
     margin-bottom: -25px;
+    max-width: 80%;
 }
 
 #first-name {
     width: 400px;
     height: 25px;
-    margin-left: 150px;
+    margin-left: 180px;
     margin-bottom: 20px;
 }
 #last-name {
     width: 400px;
     height: 25px;
-    margin-left: 150px;
+    margin-left: 180px;
     margin-bottom: 20px;
 }
 #email {
     width: 400px;
     height: 25px;
-    margin-left: 150px;
+    margin-left: 180px;
     margin-bottom: 20px;
 }
 #phone {
     width: 400px;
     height: 25px;
-    margin-left: 150px;
+    margin-left: 180px;
     margin-bottom: 20px;
 }
 #gender-male {
     width: 50px;
     height: 15px;
-    margin-left: 150px;
+    margin-left: 160px;
     margin-bottom: 20px;
 }
 #gender-female {
@@ -108,39 +120,39 @@ body {
 #birthday-month {
     width: 120px;
     height: 25px;
-    margin-left: 150px;
+    margin-left: 180px;
     margin-bottom: 20px;
 }
 #birthday-day {
     width: 90px;
     height: 25px;
-    margin-left: 30px;
+    margin-left: 40px;
     margin-bottom: 20px;
 }
 #birthday-year {
-    width: 105px;
+    width: 110px;
     margin-left: 80px;
     height: 25px;
-    margin-left: 30px;
+    margin-left: 40px;
     margin-bottom: 20px;
 }
 
 #country {
-    width: 400px;
+    width: 410px;
     height: 25px;
-    margin-left: 150px;
+    margin-left: 180px;
     margin-bottom: 20px;
 }
 #password {
     width: 400px;
     height: 25px;
-    margin-left: 150px;
+    margin-left: 180px;
     margin-bottom: 20px;
 }
 #confirm-password {
     width: 400px;
     height: 25px;
-    margin-left: 150px;
+    margin-left: 180px;
     margin-bottom: 20px;
 }
 #agreement {
@@ -171,7 +183,19 @@ h3 {
 .submit-form {
     margin-top: 20px;
     margin-bottom: 40px;
-    font-size: 40px;
+}
+
+#submit {
+    background-color: aquamarine;
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+#cancel {
+    background-color: brown;
+    font-size: 20px;
+    margin-left: 20px;
+
 }
 
 
