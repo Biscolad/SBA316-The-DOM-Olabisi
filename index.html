@@ -9,71 +9,77 @@
 <body>
     
     <nav id="main-headline">
-        <h4>Bleks Technologies</h4>
+        <h1>BLEKS TECHNOLOGIES</h1>
     </nav>
 
-    <h1>STUDENT REGISTRATION FORM</h1>
+    <img id="logo" src="images\bleksLogo.jpg" alt="BLEKSlogo">
+    
+    <div class="form-header">
+        <h1>STUDENT REGISTRATION FORM</h1>
+    </div>
+    <hr>
 
     <div class="main-container">
         <div class="form-container">
             <form class="registration">
                 <ul>
-                    <h3>Registration</h3>
-                    <label class="form-label" for="name">First Name:</label>
-                    <input type="text" id="" name="name" required> <br>
+                    <!-- <h3>Registration</h3> -->
+                    <label class="form-label" for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required> <br>
                     <br>
 
-                    <label class="form-label" for="name">Last Name:</label>
-                    <input type="text" id="" name="name" required> <br>
+                    <label class="form-label" for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required> <br>
                     <br>
 
-                    <label class="form-label" for="name">Email:</label>
-                    <input type="text" id="" name="name" required> <br>
+                    <label class="form-label" for="email">Email:</label>
+                    <input type="text" id="email" name="email" required> <br>
                     <br>
 
-                    <label class="form-label" for="name">Phone Number:</label>
-                    <input type="text" id="" name="name" required> <br>
+                    <label class="form-label" for="phone">Phone Number:</label>
+                    <input type="text" id="phone" name="phone" required> <br>
                     <br>
 
-                    <label class="form-label" for="name">Gender:</label>
-                    <input type="radio" id="" name="gender" value="Male" required>
-                    <input type="radio" id="" name="gender" value="Male" required> <br>
+                    <label class="form-label" for="gender">Gender:</label>
+                    <input type="radio" id="gender-male" name="gender" value="yes"> Male
+                    <input type="radio" id="gender-female" name="gender" value="yes"> Female <br>
                     <br>
 
-                    <label class="form-label" for="name">Country:</label>
-                    <input type="text" id="" name="name" required> <br>
+                    <label class="form-label" for="birthday">Date of Birth:</label>
+                    <input type="text" id="birthday-month" name="birthday" required>
+                    <input type="text" id="birthday-day" name="birthday" required>
+                    <input type="text" id="birthday-year" name="birthday" required> <br>
                     <br>
 
-                    <label class="form-label" for="name">Password:</label>
-                    <input type="text" id="" name="name" required> <br>
+                    <label class="form-label" for="country">Country:</label>
+                    <input type="text" id="country" name="country" required> <br>
                     <br>
 
-                    <label class="form-label" for="name">Confirm Password:</label>
-                    <input type="text" id="" name="name" required> <br>
+                    <label class="form-label" for="password">Password:</label>
+                    <input type="text" id="password" name="password" required> <br>
+                    <br>
+
+                    <label class="form-label" for="password">Confirm Password:</label>
+                    <input type="text" id="confirm-password" name="password" required> <br>
                 </ul>
+                <label>
+                    <input type="checkbox" id="agreement" name="agree" value="yes"> I agree to the terms and conditions
+                </label>
             </form>
-        </div>
-
-        <div>
-            <p>I agree to the Terms of Use</p>
         </div>
 
         <div class="submit-form">
             <input type="submit" value="Submit">
             <input type="submit" value="Cancel">
-            
         </div>
     </div>
-
-    
-    
-    <!-- <hr> -->
-
-    
-
 
 
     <script src="main.js"></script>
 </body>
-<footer></footer>
+<footer>
+    &copy; 2023   |   bleks technologies &nbsp;<span class="separator">|</span>
+    Design by <a href="http://www.bleksdesign.com">Bleks Design</a>
+</footer>
+
 </html>
