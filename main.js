@@ -71,7 +71,7 @@ cancelButton.addEventListener("click", function () {
 });
 
 //USE STYLE TO CHANGE BACKGROUND COLOR WHEN GENDER IS CLICKED
-const registrationForm = document.querySelector(".registration")
+const registrationForm = document.querySelector(".registration");
 
 registrationForm.addEventListener("focusin", function (event) {
     if (event.target.tagName === "INPUT") {
@@ -82,7 +82,9 @@ registrationForm.addEventListener("focusin", function (event) {
   
   registrationForm.addEventListener("focusout", function (event) {
     if (event.target.tagName === "INPUT") {
-      event.target.style.backgroundColor = "";
+        if (event.target.value.trim() === "") {
+        event.target.style.backgroundColor = "";
+        }
       isInputFocused = false;
     }
   });
