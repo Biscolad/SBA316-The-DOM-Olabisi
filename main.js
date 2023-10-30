@@ -34,6 +34,20 @@ form.addEventListener("submit", function(event) {
         console.log(emailValue);
     })
 
+//CREATE NEW ELEMENT
+const cancelButton = document.getElementById("cancelButton");
+const container = document.getElementById("container");
+//ADD EVENT LISTENER
+cancelButton.addEventListener("click", function () {
+    const newDiv = document.createElement("div");
+    newDiv.textContent = "Thank you for your submission";
+    container.appendChild(newDiv);
+})
+
+
+
+ 
+
 
 
 
