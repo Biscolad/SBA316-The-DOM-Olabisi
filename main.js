@@ -42,7 +42,30 @@ cancelButton.addEventListener("click", function () {
     const newDiv = document.createElement("div");
     newDiv.textContent = "Thank you for your submission";
     container.appendChild(newDiv);
-})
+});
+
+//USE STYLE TO CHANGE BACKGROUND COLOR WHEN GENDER IS CLICKED
+const registrationForm = document.querySelector(".registration")
+
+registrationForm.addEventListener("focusin", function (event) {
+    if (event.target.tagName === "INPUT") {
+      event.target.style.backgroundColor = "white";
+      isInputFocused = true;
+    }
+  });
+  
+  registrationForm.addEventListener("focusout", function (event) {
+    if (event.target.tagName === "INPUT") {
+      event.target.style.backgroundColor = "";
+      isInputFocused = false;
+    }
+  });
+  
+  registrationForm.addEventListener("keydown", function (event) {
+    if (isInputFocused && event.target.tagName === "INPUT" && event.key === " ") {
+      event.target.style.backgroundColor = "lightblue";
+    }
+  });
 
 
 
