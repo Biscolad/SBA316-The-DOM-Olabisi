@@ -10,11 +10,37 @@ console.log(formHeader);
 form.addEventListener("submit", function(event) {
     //prevent the form from submitting automaticlly
     event.preventDefault();
-})
 
-// //CHANGE BACKGROUND COLOR USING QUERY SELECTOR
-// const formBody = document.querySelector("body");
-// formBody.style.backgroundColor = "var(--body-background)";
+    const firstName = document.getElementById("firstName").value;
+    const lastName = document.getElementById("lastName").value;
+    const email = document.getElementById("email").value;
+    const phoneNumber = document.getElementById("phoneNumber").value;
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+    const emailRegex = /^\S+@\S+\.\S+$/;
+
+    if (firstName.trim() === "") {
+        alert("First Name is required")
+        return
+    }
+
+    if (LastName.trim() === "") {
+        alert("First Name is required")
+        return
+    }
+
+    if (!email.match(emailRegex)) {
+        alert("Invalid email address");
+        return
+    }
+
+//USE TWO BOM PROPERTIES OR METHODS   
+//SUBMIT FORM AND OPEN NEW WINDOW IF ALL VALIDATION MATCHED  
+const newWindow = window.open("https://www.blekstech.com/submission", "NewWindow");
+window.alert("Your Form is been Submitted Successfully!");
+
+});
+
 
 
 //ADD EVENT LISTENER TO EMAIL INPUT
@@ -63,9 +89,13 @@ registrationForm.addEventListener("focusin", function (event) {
   
   registrationForm.addEventListener("keydown", function (event) {
     if (isInputFocused && event.target.tagName === "INPUT" && event.key === " ") {
-      event.target.style.backgroundColor = "lightblue";
+      event.target.style.backgroundColor = "white";
     }
+    
   });
+
+
+
 
 
 

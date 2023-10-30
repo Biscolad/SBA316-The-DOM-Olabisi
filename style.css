@@ -101,7 +101,7 @@ body {
     margin-bottom: 20px;
     background-color: aquamarine
 }
-#last-name {
+#lastName {
     width: 400px;
     height: 25px;
     margin-left: 180px;
@@ -122,7 +122,7 @@ body {
     margin-bottom: 20px;
     background-color: aquamarine
 }
-#gender-male {
+#genderMale {
     width: 50px;
     height: 15px;
     margin-left: 160px;
@@ -130,7 +130,7 @@ body {
     background-color: aquamarine
     
 }
-#gender-female {
+#genderFemale {
     width: 60px;
     height: 15px;
     margin-left: 60px;
@@ -138,21 +138,21 @@ body {
     background-color: aquamarine
 }
 
-#birthday-month {
+#birthdayMonth {
     width: 120px;
     height: 25px;
     margin-left: 180px;
     margin-bottom: 20px;
     background-color: aquamarine
 }
-#birthday-day {
+#birthdayDay {
     width: 90px;
     height: 25px;
     margin-left: 40px;
     margin-bottom: 20px;
     background-color: aquamarine
 }
-#birthday-year {
+#birthdayYear {
     width: 110px;
     margin-left: 80px;
     height: 25px;
@@ -175,7 +175,7 @@ body {
     margin-bottom: 20px;
     background-color: aquamarine
 }
-#confirm-password {
+#confirmPassword {
     width: 400px;
     height: 25px;
     margin-left: 180px;
