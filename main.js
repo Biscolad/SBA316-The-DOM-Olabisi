@@ -12,6 +12,10 @@ form.addEventListener("submit", function(event) {
     event.preventDefault();
 })
 
+// //CHANGE BACKGROUND COLOR USING QUERY SELECTOR
+// const formBody = document.querySelector("body");
+// formBody.style.backgroundColor = "var(--body-background)";
+
 
 //ADD EVENT LISTENER TO EMAIL INPUT
     const emailInput = document.getElementById("email");
@@ -23,6 +27,8 @@ form.addEventListener("submit", function(event) {
         
     } else {
         emailInput.style.border = "1px solid red";
+    //ERROR MESSAGE IF EMAIL INPUT IS INVALID  
+    emailError.style.display = "block";  
     }
     
         console.log(emailValue);
@@ -34,13 +40,5 @@ form.addEventListener("submit", function(event) {
 
 
 
-
-function validate(evt) {
-    constnameVal = validateName();
-    if (nameVal === false) {
-        evt.returnValue = false;
-        return false
-    }
-}
 
 

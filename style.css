@@ -1,12 +1,12 @@
 //CSS CUSTOM PROPERTIES
 :root {
-    --main-background: gray;
-    /* --top-menu-background: aquamarine; */
-  }
+    --body-background: gray;
+}
 
 .error {
     color: red
 }  
+
 
 body {
     max-width: 100%;
